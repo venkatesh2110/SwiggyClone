@@ -1,1 +1,61 @@
-<p>Welcome</p>
+<mat-toolbar class="navbar">
+    <div>
+        <button mat-button class="quickView"><h2>Swiggy</h2></button>
+    </div>
+    <div class="toolbar">
+        <span>
+            <input type="text" placeholder="Search.." style="border:none;" name="search">
+            <button mat-button class="quickView"><i class="fa fa-search"></i></button>
+        </span>
+        <span>
+            <button mat-button class="quickView"><i class="fas fa-user"></i>Sign In</button>
+        </span>
+        <span>
+            <button mat-button class="quickView"><i class="fas fa-shopping-bag"></i>Cart</button>
+        </span>
+    </div>
+</mat-toolbar>
+<div>
+<div class="restuarants">
+    
+        <button mat-button class="buttonGroup quickView">
+            Relevance
+        </button>
+        <button mat-button class="buttonGroup quickView">
+            Cost for two
+        </button>
+        <button mat-button class="buttonGroup quickView">
+            Delivery Time
+        </button>
+        <button mat-button class="buttonGroup quickView">
+            Rating
+        </button>
+    
+    <mat-form-field>
+        <mat-label>Filters</mat-label>
+        <mat-select>
+            <mat-option>Low to high</mat-option>
+            <mat-option>High to low</mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
+<div class="restuarants row">
+    <mat-card class="col-sm-3 cardMargin" *ngFor='let card of cards'>
+        <mat-card-header>
+            <mat-card-title>Barbeque</mat-card-title>
+            <mat-card-subtitle>Grill</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="./../../assets/Images/Foodrestuarant.jpg"
+            alt="Restuarant">
+        <mat-card-content>
+            <p>
+                The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                bred for hunting.
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button class="quickView">Quick View</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

@@ -1,0 +1,32 @@
+.navbar{
+    justify-content: space-between;
+}
+
+.navbar1{
+    /* justify-content: space-between; */
+    width: 85%;
+    margin-left: 7%;
+    margin-top: 5%;
+}
+.restuarants{
+    width: 80%;
+    margin-left: 7%;
+    margin-top: 2%;
+}
+.toolbar{
+    margin-right: 1rem;
+}
+
+.cardMargin{
+    margin: 1%;
+}
+
+.buttonGroup{
+    margin-left:5%;
+    margin-right: 5%;
+    font-size: large;
+}
+
+.quickView:hover{
+    color:orange;
+}
